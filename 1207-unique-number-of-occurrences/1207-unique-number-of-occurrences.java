@@ -5,12 +5,8 @@ class Solution {
         for(int n: arr)
             map.put(n, map.getOrDefault(n,0)+1);
         Set<Integer> set = new HashSet();
-        for(int freq: map.values()){
-            if(set.contains(freq))
-                return false;
+        for(int freq: map.values())
             set.add(freq);
-        }
-        
-        return true;
+        return set.size()==map.size();
     }
 }
