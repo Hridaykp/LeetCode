@@ -5,11 +5,11 @@ class Solution {
             map.put(ch, map.getOrDefault(ch,0)+1);
         List<Character> list = new ArrayList(map.keySet());
         list.sort((a,b) -> map.get(b) - map.get(a));
-        String st = "";
+        StringBuilder st = new StringBuilder();
         for(char ch: list){
             for(int i=0; i<map.get(ch); i++)
-                st += ch;
+                st.append(ch);
         }
-        return st;
+        return st.toString();
     }
 }
