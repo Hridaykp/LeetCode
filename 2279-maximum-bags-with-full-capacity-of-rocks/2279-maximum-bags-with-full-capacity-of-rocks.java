@@ -11,6 +11,7 @@ class Solution {
                 additionalRocks -= extra_cap[i];
                 max++;
             }
+            else break;
         }
         
         return max;
