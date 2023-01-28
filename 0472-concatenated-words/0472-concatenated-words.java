@@ -1,20 +1,23 @@
 class Solution {
-    public List<String> findAllConcatenatedWordsInADict(String[] words) {
-        final Set<String> dictionary = new HashSet<>(Arrays.asList(words));
-        final List<String> res = new ArrayList<>();
-        for (final String word : words) {
-            final int length = word.length();
-            final boolean[] dp = new boolean[length + 1];
-            dp[0] = true;
-            for (int i = 1; i <= length; ++i) {
-                for (int j = (i == length ? 1 : 0); !dp[i] && j < i; ++j) {
-                    dp[i] = dp[j] && dictionary.contains(word.substring(j, i)); 
-                }
-            }
-            if (dp[length]) {
-                res.add(word);
-            }
+    Set<String> set;                            
+    private boolean isConcat(String word){
+        int n = word.length();
+        for(int i=1; i<n; i++){
+            String suff = word.substring(i);
+            String pref = word.substring(0, i);
+            if(set.contains(pref) && (isConcat(suff) || set.contains(suff)))
+                return true;
         }
-        return res;   
+        return false;
+    }
+    public List<String> findAllConcatenatedWordsInADict(String[] words) {
+        List<String> list = new ArrayList();
+        set = new HashSet();
+        for(String word: words)
+            set.add(word);
+        for(String word: words)
+            if(isConcat(word))
+                list.add(word);
+        return list;
     }
 }
