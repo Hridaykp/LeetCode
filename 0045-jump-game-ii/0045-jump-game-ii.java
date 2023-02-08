@@ -8,7 +8,9 @@ class Solution {
             if(i == curr){
                 jumps++;
                 curr = longest;
-            }      
+            }
+            if(curr >= nums.length-1)
+                return jumps;
         }
         return jumps;
     }
