@@ -11,12 +11,9 @@ class Solution {
     public int canBeTypedWords(String t, String b) {
         int cnt = 0;
         String words[] = t.split(" ");
-        for(String word: words){
-            if(canType(word, b)){
+        for(String word: words)
+            if(canType(word, b))
                 cnt++;
-                // break;
-            }
-        }
         return cnt;
     }
 }
