@@ -8,6 +8,9 @@ class Solution {
             else
                 st.push(ch);        
         }
-        return st.stream().map(a -> a.toString()).collect(Collectors.joining(""));
+        StringBuilder res = new StringBuilder();
+        while(!st.isEmpty())
+            res.append(st.pop());
+        return res.reverse().toString();
     }
 }
