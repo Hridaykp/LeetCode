@@ -7,7 +7,10 @@ class Solution {
             int idx = Integer.valueOf(arr[i].charAt(n-1))-'1';
             res[idx] = arr[i].substring(0, n-1);
         }
-        
-        return String.join(" ", res);
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<res.length-1; i++)
+            sb.append(res[i]+" ");
+        sb.append(res[res.length-1]);
+        return sb.toString();
     }
 }
