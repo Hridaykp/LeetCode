@@ -8,6 +8,6 @@ class Solution {
                 maxP = Math.max(maxP, pro);
             }
         }
-        return nums.length < 2 ? nums[0] : maxP;
+        return maxP;
     }
 }
