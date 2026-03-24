@@ -15,4 +15,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/Hridaykp/LeetCode/tree/main/1005-maximize-sum-of-array-after-k-negations/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1513-number-of-substrings-with-only-1s](https://github.com/Hridaykp/LeetCode/tree/main/1513-number-of-substrings-with-only-1s/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1513-number-of-substrings-with-only-1s](https://github.com/Hridaykp/LeetCode/tree/main/1513-number-of-substrings-with-only-1s/) | Medium |
 <!---LeetCode Topics End-->
