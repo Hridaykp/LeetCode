@@ -23,4 +23,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1513-number-of-substrings-with-only-1s](https://github.com/Hridaykp/LeetCode/tree/main/1513-number-of-substrings-with-only-1s/) | Medium |
+| [2075-decode-the-slanted-ciphertext](https://github.com/Hridaykp/LeetCode/tree/main/2075-decode-the-slanted-ciphertext/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2075-decode-the-slanted-ciphertext](https://github.com/Hridaykp/LeetCode/tree/main/2075-decode-the-slanted-ciphertext/) | Medium |
 <!---LeetCode Topics End-->
