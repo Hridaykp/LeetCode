@@ -9,7 +9,6 @@ public:
             mx[i] = max(mx[i-1], (long)nums[i-1]);
             mn[n-i-1] = min(mn[n-i], (long)nums[n-i-1]);
         }
-        for(int i=0;i<n;i++) cout<< mx[i] << " ," << mn[i] << endl;
         for(int i = 0; i<n; i++) {
             if((mx[i]-mn[i]) <= k ) return i;
         }
